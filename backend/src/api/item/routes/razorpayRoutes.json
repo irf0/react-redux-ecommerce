@@ -1,0 +1,22 @@
+
+{
+    "routes": [
+      {
+        "method": "POST",
+        "path": "/orders",
+        "handler": "razorpay.createOrder",
+        "config": {
+          "policies": []
+        }
+      },
+      {
+        "method": "POST",
+        "path": "/payments",
+        "handler": "razorpay.verifyPayment",
+        "config": {
+          "policies": []
+        }
+      }
+    ]
+  }
+  
