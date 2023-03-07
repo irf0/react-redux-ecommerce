@@ -14,7 +14,7 @@ function Search() {
     event.preventDefault();
 
     const response = await fetch(
-      `http://localhost:1337/api/items/${query}?populate=image`,
+      `https://react-redux-ecommerce-six.vercel.app/api/items/${query}?populate=image`,
       { method: "GET" }
     );
     const data = await response.json();

@@ -30,7 +30,7 @@ const Item = ({ item }) => {
       <div className="flex justify-center">
         <img
           className="w-72 h-340 rounded-md cursor-pointer mt-2"
-          src={`http://localhost:1337${url}`}
+          src={`https://earnest-sprinkles-a569ca.netlify.app${url}`}
           alt={item.name}
           onClick={() => navigate(`/item/${item.id}`)}
           onMouseEnter={() => setIsHovered(true)}

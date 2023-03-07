@@ -16,7 +16,7 @@ const RazorpayPayment = () => {
   const [email, setEmail] = useState("");
   const [item, setItem] = useState("");
   const dispatch = useDispatch();
-  const BASE_URL = "http://localhost:1337";
+  const BASE_URL = "https://earnest-sprinkles-a569ca.netlify.app";
 
   const createOrder = async () => {
     try {

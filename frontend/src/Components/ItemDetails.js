@@ -16,7 +16,7 @@ const ItemDetails = () => {
 
   async function getItem() {
     const response = await fetch(
-      `http://localhost:1337/api/items/${itemId}?populate=image`,
+      `https://earnest-sprinkles-a569ca.netlify.app/${itemId}?populate=image`,
       { method: "GET" }
     );
     const data = await response.json();
@@ -26,7 +26,7 @@ const ItemDetails = () => {
   //Related products
   async function getRelatedItems() {
     const response = await fetch(
-      "http://localhost:1337/api/items?populate=images",
+      "https://react-redux-ecommerce-six.vercel.app/api/items?populate=images",
       { method: "GET" }
     );
     const dataJson = await response.json();

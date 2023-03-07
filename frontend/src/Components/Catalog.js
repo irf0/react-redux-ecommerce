@@ -9,7 +9,7 @@ const Catalog = () => {
   const items = useSelector((state) => state.cart.items);
   const getItems = async () => {
     const items = await fetch(
-      "http://localhost:1337/api/items?populate=image",
+      "https://earnest-sprinkles-a569ca.netlify.app/api/items?populate=image",
       {
         method: "GET",
       }

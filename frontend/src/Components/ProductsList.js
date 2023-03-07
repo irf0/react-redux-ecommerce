@@ -9,7 +9,7 @@ const ProductsList = () => {
   const items = useSelector((state) => state.cart.items);
   const getItems = async () => {
     const items = await fetch(
-      "http://localhost:1337/api/items?populate=image",
+      "https://react-redux-ecommerce-six.vercel.app/api/items?populate=image",
       {
         method: "GET",
       }
